@@ -1,0 +1,12 @@
+package: dap_go
+license: MIT
+oweners:
+- name: kaifei
+  email: hukfei@qq.com
+  homepage:
+excludeDirs:
+- conf
+- constant
+- env
+import:
+- package: github.com/go-sql-driver/mysql
