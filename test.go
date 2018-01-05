@@ -1,17 +1,17 @@
 package main
 
 import (
-	_ "github.com/go-sql-driver/mysql"
+	"conf"
 	"database/sql"
 	"fmt"
-	"conf"
+	_ "github.com/go-sql-driver/mysql"
 	"log"
 )
 
 func main() {
 	db, err := sql.Open("mysql", conf.GetDsn())
 	if err != nil {
-		panic(err.Error())  // Just for example purpose. You should use proper error handling instead of panic
+		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
 	}
 	defer db.Close()
 
@@ -36,6 +36,5 @@ func main() {
 		}
 		//fmt.Println(record)
 	}
-
 
 }

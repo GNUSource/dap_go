@@ -1,15 +1,15 @@
 package conf
 
 import (
-	"env"
 	"constant"
+	"env"
 	"fmt"
 )
 
 var (
-	user string
+	user     string
 	password string
-	address string
+	address  string
 	protocol string
 	database string
 )

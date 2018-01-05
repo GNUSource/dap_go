@@ -3,4 +3,5 @@ package env
 import (
 	"constant"
 )
-const Env  = constant.ENV_DEV
+
+const Env = constant.ENV_DEV
